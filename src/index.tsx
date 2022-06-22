@@ -15,6 +15,11 @@ export const customMui = createTheme({
       },
     },
   },
+  palette: {
+    primary: {
+      main: '#23A0B7',
+    },
+  },
 })
 
 const root = ReactDOM.createRoot(
