@@ -44,10 +44,10 @@ export function FormRegister() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <Card>
-        <CardHeader title="Registration"/>
-        <CardContent>
+    <Card>
+      <CardHeader title="Registration"/>
+      <CardContent>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <Stack width={300} spacing={2}>
             <FormControl>
               <FormLabel required>Username</FormLabel>
@@ -91,8 +91,8 @@ export function FormRegister() {
               <Button type="submit" variant="contained" size="large" fullWidth>Sign up</Button>
             </FormControl>
           </Stack>
-        </CardContent>
-      </Card>
-    </form>
+        </form>
+      </CardContent>
+    </Card>
   )
 }
